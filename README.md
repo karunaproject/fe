@@ -1,10 +1,15 @@
 npm start
+
 npm run lint
+
 npm run lint-fix
 
 Recommended: 
+
 install prettier in visual studio
+
 intelliSense for css
+
 html css support
 
 

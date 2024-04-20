@@ -17,6 +17,8 @@ install html css support
 install ESLint
 
 If pre-push hook dosen't work for you please let me(Maciej Bugaj) know or use this command in terminal: "chmod +x hooks/pre-push"
+After git push you should see "Checking code style..."
+![alt text](<Screenshot from 2024-04-20 09-25-21.png>)
 
 # Getting Started with Create React App
 

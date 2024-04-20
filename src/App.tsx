@@ -1,7 +1,7 @@
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import { Header } from './components/Header'
-import { DuckBody } from './components/DuckBody';
+import { DuckBody } from './components/DuckBody'
 
 const App = () => {
   return (

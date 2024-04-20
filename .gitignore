@@ -11,6 +11,9 @@
 # production
 /build
 
+#JetBrain IDE
+.idea/
+
 # misc
 .DS_Store
 .env.local

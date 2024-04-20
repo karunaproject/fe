@@ -1,17 +1,24 @@
-npm start
+npm start - run project
 
-npm run lint
+npm run lint  -  shows problematic patterns
 
-npm run lint-fix
+npm run lint  -fix - fix problematix patterns
 
-Recommended: 
+npm run format - formating everything
+
+
+Recommended for visual studio:
 
 install prettier in visual studio
 
-intelliSense for css
+install intelliSense for css
 
-html css support
+install html css support
 
+install ESLint
+
+
+If pre-push hook dosen't work for you please let me(Maciej Bugaj) know or use this command in terminal: "chmod +x hooks/pre-push"
 
 # Getting Started with Create React App
 
@@ -59,5 +66,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-

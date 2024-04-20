@@ -1,11 +1,10 @@
 npm start - run project
 
-npm run lint  -  shows problematic patterns
+npm run lint - shows problematic patterns
 
-npm run lint  -fix - fix problematix patterns
+npm run lint -fix - fix problematix patterns
 
 npm run format - formating everything
-
 
 Recommended for visual studio:
 
@@ -16,7 +15,6 @@ install intelliSense for css
 install html css support
 
 install ESLint
-
 
 If pre-push hook dosen't work for you please let me(Maciej Bugaj) know or use this command in terminal: "chmod +x hooks/pre-push"
 

@@ -9,7 +9,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "standard",
     "standard",
-    "prettier"
+    "prettier",
   ],
   overrides: [],
   parser: "@typescript-eslint/parser",

@@ -2,6 +2,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
 import { DuckBody } from "./components/DuckBody";
+import { Hello } from "./components/Hello";
 
 const App = () => {
   return (
@@ -9,7 +10,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route index element={<h1>HOME PAGE</h1>} />
-        <Route path={"/something"} element={<h1>SOMETHING PAGE</h1>} />
+        <Route path={"/hello"} element={<Hello />} />
         <Route path={"/duck"} element={<DuckBody />} />
       </Routes>
     </div>

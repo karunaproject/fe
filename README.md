@@ -20,6 +20,8 @@ If pre-push hook dosen't work for you please let me(Maciej Bugaj) know or use th
 After git push you should see "Checking code style..."
 ![alt text](<Screenshot from 2024-04-20 09-25-21.png>)
 
+RTK QUERY: https://redux-toolkit.js.org/rtk-query/usage/queries
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

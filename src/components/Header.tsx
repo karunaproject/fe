@@ -7,8 +7,8 @@ export const Header = () => {
         <Link to={"/"} className="btn btn-primary m-5" type="button">
           Home
         </Link>
-        <Link to={"/something"} className="btn btn-primary m-5" type="button">
-          Something
+        <Link to={"/hello"} className="btn btn-primary m-5" type="button">
+          Hello
         </Link>
         <Link to={"/duck"} className="btn btn-primary m-5" type="button">
           Duck

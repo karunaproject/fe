@@ -14,7 +14,7 @@ module.exports = {
   overrides: [],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaVersion: 2021, 
+    ecmaVersion: "latest",
     sourceType: "module",
   },
   plugins: ["react", "@typescript-eslint"],

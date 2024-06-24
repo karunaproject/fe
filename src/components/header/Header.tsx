@@ -1,4 +1,4 @@
-import { Container, TitleLogoWrapper, TitleWrapper, NavBarWrapper, SubHeadlineWrapper, LogoWrapper } from "./style";
+import { Container, TitleLogoWrapper, TitleWrapper, NavBarWrapper, SubHeadlineWrapper, LogoWrapper, StyledButton } from "./style";
 import NavBar from "../navbar/NavBar";
 import logo from "../../images/img_3.png";
 
@@ -12,13 +12,7 @@ export const Header = () => {
                 </LogoWrapper>
             </TitleLogoWrapper>
             <SubHeadlineWrapper>bo DOBRE schronisko to PUSTE schronisko</SubHeadlineWrapper>
-            <button
-                style={{ position: "relative", marginTop: "2vw", backgroundColor: "rgb(255, 153, 51)" }}
-                type="button"
-                className="btn"
-            >
-                Więcej o nas
-            </button>
+            <StyledButton type="button">Więcej o nas</StyledButton>
             <NavBarWrapper>
                 <NavBar />
             </NavBarWrapper>

@@ -54,7 +54,6 @@ export const DropdownMenu = styled.ul`
     bottom: 100%; /* Display above the NavItem */
     left: 0;
     display: none;
-    min-width: 200px; /* Ensure it has some width to be visible */
     z-index: 100; /* Ensure it's on top of other elements */
     
 

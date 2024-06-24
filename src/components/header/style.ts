@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import background from "../../images/img.png";
+import { Button } from "reactstrap";
 
 export const Container = styled.div`
     background-image: url(${background});
@@ -42,4 +43,11 @@ export const SubHeadlineWrapper = styled.div`
 
 export const LogoWrapper = styled.div`
     margin-left: 2vw;
+`;
+
+export const StyledButton = styled(Button)`
+    margin-top: 2vw;
+    background-color: rgb(255, 153, 51);
+    width: 16vw;
+    font-size: 1.5vw;
 `;

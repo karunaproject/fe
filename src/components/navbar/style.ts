@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.nav`
     background-color: rgba(211,211,211,0.5);
     color: black;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     height: 5vw;
     padding-left: 4vw;
     padding-right: 4vw;
@@ -27,7 +27,9 @@ export const NavList = styled.ul`
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 `;
 
 export const NavItem = styled.li`

@@ -4,10 +4,10 @@ import { Button } from "reactstrap";
 
 export const Container = styled.div`
     background-image: url(${background});
-    background-size: 100%;
+    background-size: contain;
     background-position: center;
-    min-width: 100vw;
-    min-height: 65vw;
+    //min-width: 90vw;
+    min-height: 40vw;
     position: relative;
     padding-top: 2vw;
 `;

@@ -1,27 +1,53 @@
-import { Container, Logo, NavList, NavItem, NavLink, DropdownMenu } from "./style";
+import {Container, Logo, NavList, NavItem, NavLink, DropdownMenu} from "./style";
 import logo from "../../images/img_2_edit.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
-import { useLocation } from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faHouse} from "@fortawesome/free-solid-svg-icons";
+import {useLocation} from "react-router-dom";
+import {useEffect, useRef, useState} from "react";
 
 export const NavBar = () => {
     const location = useLocation();
     const currentPath = location.pathname;
+    const containerRef = useRef<HTMLDivElement | null>(null);
+    const [isNavbarFixed, setIsNavbarFixed] = useState(false);
+    const [yLimitValue, setYLimitValue] = useState(0);
 
     const isActive = (path: string) => currentPath === path;
     const isActiveList = (paths: string[]) => {
         for (const path of paths) {
             if (path === currentPath) {
-                return true
+                return true;
             }
         }
         return false;
-    }
+    };
+
+    useEffect(() => {
+
+
+        const handleScroll = () => {
+            if (containerRef.current) {
+                const top = containerRef.current.getBoundingClientRect().top;
+                if (top < 0) {
+                    setIsNavbarFixed(true);
+                    setYLimitValue(window.scrollY + top);
+                } else if (top >= 0 && window.scrollY <= yLimitValue) {
+                    setIsNavbarFixed(false);
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [isNavbarFixed]);
 
     return (
-        <Container>
+        <Container ref={containerRef} className={isNavbarFixed ? 'top-bar' : ''}>
             <Logo href="#">
-                <img src={logo} alt="logo" />
+                <img src={logo} alt="logo"/>
             </Logo>
             <NavList>
                 <NavItem className={isActiveList(['/home', '/asd']) ? 'active' : ''}>
@@ -48,12 +74,12 @@ export const NavBar = () => {
                 </NavItem>
                 <NavItem className={isActive('/home') ? 'active' : ''}>
                     <NavLink href="/home">
-                        <FontAwesomeIcon icon={faHouse} />
+                        <FontAwesomeIcon icon={faHouse}/>
                     </NavLink>
                 </NavItem>
             </NavList>
         </Container>
     );
-}
+};
 
 export default NavBar;

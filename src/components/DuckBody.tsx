@@ -1,6 +1,6 @@
 export const DuckBody = () => {
   return (
-    <div>
+    <div style={{height: "1600px"}}>
       <img src="./duck.0.jpeg" />
     </div>
   );

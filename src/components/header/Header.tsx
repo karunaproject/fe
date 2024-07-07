@@ -8,7 +8,7 @@ export const Header = () => {
             <TitleLogoWrapper>
                 <TitleWrapper>KASTRUJEMY BEZDOMNOSC</TitleWrapper>
                 <LogoWrapper>
-                    <img alt="logo_koalicja" style={{ width: "10vw" }} src={logo} />
+                    <img alt="logo_koalicja" style={{ width: "8vw" }} src={logo} />
                 </LogoWrapper>
             </TitleLogoWrapper>
             <SubHeadlineWrapper>bo DOBRE schronisko to PUSTE schronisko</SubHeadlineWrapper>

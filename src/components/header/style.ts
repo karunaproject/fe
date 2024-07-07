@@ -4,12 +4,14 @@ import { Button } from "reactstrap";
 
 export const Container = styled.div`
     background-image: url(${background});
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     background-position: center;
-    //min-width: 90vw;
-    min-height: 40vw;
+    min-height: 45vw;
     position: relative;
-    padding-top: 2vw;
+    font-family: "Mukta", sans-serif ;
+    font-weight: 500;
+    font-style: normal;
 `;
 
 export const NavBarWrapper = styled.nav`
@@ -22,32 +24,37 @@ export const TitleLogoWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: fit-content;
-    margin-left: 22vw;
+    margin-left: 12vw;
 `;
 
 export const TitleWrapper = styled.div`
     font-size: 4vw;
-    background-color: rgb(255, 153, 51);
+    background-color: rgb(253, 188, 102);
     color: white;
-    padding: 1vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
     border-radius: 5px;
+    //margin-top: -3vw;
 `;
 
 export const SubHeadlineWrapper = styled.div`
-    margin: 2vw auto;
-    font-size: 2.5vw;
+    margin-top: -1vw;
+    font-size: 2.4vw;
     color: white;
     text-align: center;
 `;
 
 export const LogoWrapper = styled.div`
     margin-left: 2vw;
+    display: flex;
+    padding-top: 1vw;
 `;
 
 export const StyledButton = styled(Button)`
-    margin-top: 2vw;
-    background-color: rgb(255, 153, 51);
-    width: 16vw;
+    margin-top: 5vw;
+    background-color: rgb(253, 188, 102);
+    width: 14vw;
     font-size: 1.5vw;
+    color: rgb(2,48,67);
+    font-weight: 600;
 `;

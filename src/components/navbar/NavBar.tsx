@@ -9,6 +9,14 @@ export const NavBar = () => {
     const currentPath = location.pathname;
 
     const isActive = (path: string) => currentPath === path;
+    const isActiveList = (paths: string[]) => {
+        for (const path of paths) {
+            if (path === currentPath) {
+                return true
+            }
+        }
+        return false;
+    }
 
     return (
         <Container>
@@ -16,7 +24,7 @@ export const NavBar = () => {
                 <img src={logo} alt="logo" />
             </Logo>
             <NavList>
-                <NavItem className={isActive('/kim-jestesmy') ? 'active' : ''}>
+                <NavItem className={isActiveList(['/home', '/asd']) ? 'active' : ''}>
                     <NavLink className="nav-link dropdown-toggle" href="#" role="button">
                         Kim jesteśmy?
                     </NavLink>

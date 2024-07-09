@@ -29,7 +29,7 @@ export const TitleLogoWrapper = styled.div`
 `;
 
 export const TitleWrapper = styled.div`
-    font-size: 4vw;
+    font-size: 4.1rem;
     background-color: rgb(253, 188, 102);
     color: white;
     padding-left: 3vw;
@@ -39,7 +39,7 @@ export const TitleWrapper = styled.div`
 
 export const SubHeadlineWrapper = styled.div`
     margin-top: -1vw;
-    font-size: 2.4vw;
+    font-size: 2.4rem;
     color: white;
     text-align: center;
 `;
@@ -54,7 +54,7 @@ export const StyledButton = styled(Button)`
     margin-top: 5vw;
     background-color: rgb(253, 188, 102);
     width: 14vw;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: rgb(2, 48, 67);
     font-weight: 600;
 `;

@@ -1,8 +1,15 @@
-const HomePage  = () => {
+import Header from "../../components/header";
+import NavBar from "../../components/navbar/NavBar";
+
+const HomePage = () => {
     return (
-        <div>
-            <h1>Hello</h1>
-        </div>
+        <>
+            <Header/>
+            <NavBar/>
+            <div>
+                <h1>Hello</h1>
+            </div>
+        </>
     )
 }
 

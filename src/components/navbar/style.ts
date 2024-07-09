@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.nav`
-    background-color: rgba(211,211,211,0.5);
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.5);
     color: black;
     font-size: 1vw;
     height: 3vw;
@@ -12,14 +14,12 @@ export const Container = styled.nav`
     left: 0;
     right: 0;
     z-index: 1000;
-    
+    position: sticky;
+
     .active {
-        border-top: 3px solid rgb(255,153,51);
-    };
-    
-    &.top-bar {
-        position: fixed;
-    };
+        border-top: 3px solid rgb(255, 153, 51);
+    }
+;
 `;
 
 export const Logo = styled.a`
@@ -53,7 +53,7 @@ export const NavLink = styled.a`
 `;
 
 export const DropdownMenu = styled.ul`
-    background-color: rgba(211,211,211,0.5);
+    background-color: rgba(211, 211, 211, 0.5);
     border: none;
     list-style: none;
     padding: 0;
@@ -61,7 +61,7 @@ export const DropdownMenu = styled.ul`
     position: absolute;
     left: 0;
     display: none;
-    
+
 
     ${NavItem}:hover & {
         display: block;
@@ -72,8 +72,9 @@ export const DropdownMenu = styled.ul`
         text-decoration: none;
         display: block;
         border-left: 5px solid transparent;
+
         &:hover {
-            border-left: 5px solid rgb(255,153,51);
+            border-left: 5px solid rgb(255, 153, 51);
         }
     }
 `;

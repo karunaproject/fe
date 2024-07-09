@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import background from "../../images/img.png";
-import { Button } from "reactstrap";
+import {Button} from "reactstrap";
 
 export const Container = styled.div`
     background-image: url(${background});
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    min-height: 45vw;
+    height: 45vw;
     position: relative;
-    font-family: "Mukta", sans-serif ;
+    font-family: "Mukta", sans-serif;
     font-weight: 500;
     font-style: normal;
 `;
@@ -34,7 +34,6 @@ export const TitleWrapper = styled.div`
     padding-left: 3vw;
     padding-right: 3vw;
     border-radius: 5px;
-    //margin-top: -3vw;
 `;
 
 export const SubHeadlineWrapper = styled.div`
@@ -55,6 +54,6 @@ export const StyledButton = styled(Button)`
     background-color: rgb(253, 188, 102);
     width: 14vw;
     font-size: 1.5vw;
-    color: rgb(2,48,67);
+    color: rgb(2, 48, 67);
     font-weight: 600;
 `;

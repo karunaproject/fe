@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     .left {
-        border-radius: 190px 10px 10px 190px;
+        border-radius: 230px 10px 10px 230px;
     }
     .right {
-        border-radius: 10px 190px 190px 10px;
+        border-radius: 10px 230px 230px 10px;
         margin-right: 0;
         margin-left: auto;
     }

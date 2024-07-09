@@ -5,9 +5,9 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.p`
-    font-size: 5vw;
+    font-size: 3vw;    
 `;
 
 export const SubTitle = styled.p`
-    font-size: 3vw;    
+    font-size: 2vw;    
 `;

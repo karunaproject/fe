@@ -3,14 +3,10 @@ import logo from "../../images/img_2_edit.png";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHouse} from "@fortawesome/free-solid-svg-icons";
 import {useLocation} from "react-router-dom";
-import {useEffect, useRef, useState} from "react";
 
 export const NavBar = () => {
     const location = useLocation();
     const currentPath = location.pathname;
-    const containerRef = useRef<HTMLDivElement | null>(null);
-    const [isNavbarFixed, setIsNavbarFixed] = useState(false);
-    const [yLimitValue, setYLimitValue] = useState(0);
 
     const isActive = (path: string) => currentPath === path;
     const isActiveList = (paths: string[]) => {
@@ -22,35 +18,13 @@ export const NavBar = () => {
         return false;
     };
 
-    useEffect(() => {
-
-
-        const handleScroll = () => {
-            if (containerRef.current) {
-                const top = containerRef.current.getBoundingClientRect().top;
-                if (top < 0) {
-                    setIsNavbarFixed(true);
-                    setYLimitValue(window.scrollY + top);
-                } else if (top >= 0 && window.scrollY <= yLimitValue) {
-                    setIsNavbarFixed(false);
-                }
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, [isNavbarFixed]);
-
     return (
-        <Container ref={containerRef} className={isNavbarFixed ? 'top-bar' : ''}>
-            <Logo href="#">
-                <img src={logo} alt="logo"/>
-            </Logo>
+        <Container>
             <NavList>
-                <NavItem className={isActiveList(['/home', '/asd']) ? 'active' : ''}>
+                <Logo href="#">
+                    <img src={logo} alt="logo"/>
+                </Logo>
+                <NavItem className={isActiveList(['/something', '/asd']) ? 'active' : ''}>
                     <NavLink className="nav-link dropdown-toggle" href="#" role="button">
                         Kim jesteśmy?
                     </NavLink>
@@ -61,13 +35,13 @@ export const NavBar = () => {
                     </DropdownMenu>
                 </NavItem>
                 <NavItem className={isActive('/4') ? 'active' : ''}>
-                    <NavLink href="/4">Program Kastrujemy Bezdomność</NavLink>
+                    <NavLink href="/#">Program Kastrujemy Bezdomność</NavLink>
                 </NavItem>
                 <NavItem className={isActive('/3') ? 'active' : ''}>
-                    <NavLink href="/3">Dołącz i poczuj siłę KOALICJI</NavLink>
+                    <NavLink href="/#">Dołącz i poczuj siłę KOALICJI</NavLink>
                 </NavItem>
                 <NavItem className={isActive('/2') ? 'active' : ''}>
-                    <NavLink href="/2">Inicjatywy</NavLink>
+                    <NavLink href="/#">Inicjatywy</NavLink>
                 </NavItem>
                 <NavItem className={isActive('/duck') ? 'active' : ''}>
                     <NavLink href="/duck">Mapa Gmin</NavLink>

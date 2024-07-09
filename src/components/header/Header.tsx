@@ -1,5 +1,4 @@
-import { Container, TitleLogoWrapper, TitleWrapper, NavBarWrapper, SubHeadlineWrapper, LogoWrapper, StyledButton } from "./style";
-import NavBar from "../navbar/NavBar";
+import {Container, TitleLogoWrapper, TitleWrapper, SubHeadlineWrapper, LogoWrapper, StyledButton} from "./style";
 import logo from "../../images/img_3.png";
 
 export const Header = () => {
@@ -8,14 +7,11 @@ export const Header = () => {
             <TitleLogoWrapper>
                 <TitleWrapper>KASTRUJEMY BEZDOMNOSC</TitleWrapper>
                 <LogoWrapper>
-                    <img alt="logo_koalicja" style={{ width: "8vw" }} src={logo} />
+                    <img alt="logo_koalicja" style={{width: "8vw"}} src={logo}/>
                 </LogoWrapper>
             </TitleLogoWrapper>
             <SubHeadlineWrapper>bo DOBRE schronisko to PUSTE schronisko</SubHeadlineWrapper>
             <StyledButton type="button">Więcej o nas</StyledButton>
-            <NavBarWrapper>
-                <NavBar />
-            </NavBarWrapper>
         </Container>
     );
 };

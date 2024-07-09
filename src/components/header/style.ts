@@ -1,23 +1,24 @@
 import styled from "styled-components";
 import background from "../../images/img.png";
-import { Button } from "reactstrap";
+import {Button} from "reactstrap";
 
 export const Container = styled.div`
     background-image: url(${background});
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    min-height: 45vw;
+    height: 45vw;
     position: relative;
-    font-family: "Mukta", sans-serif ;
+    font-family: "Mukta", sans-serif;
     font-weight: 500;
     font-style: normal;
-`;
-
-export const NavBarWrapper = styled.nav`
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
 `;
 
 export const TitleLogoWrapper = styled.div`
@@ -28,18 +29,17 @@ export const TitleLogoWrapper = styled.div`
 `;
 
 export const TitleWrapper = styled.div`
-    font-size: 4vw;
+    font-size: 4.1rem;
     background-color: rgb(253, 188, 102);
     color: white;
     padding-left: 3vw;
     padding-right: 3vw;
     border-radius: 5px;
-    //margin-top: -3vw;
 `;
 
 export const SubHeadlineWrapper = styled.div`
     margin-top: -1vw;
-    font-size: 2.4vw;
+    font-size: 2.4rem;
     color: white;
     text-align: center;
 `;
@@ -54,7 +54,7 @@ export const StyledButton = styled(Button)`
     margin-top: 5vw;
     background-color: rgb(253, 188, 102);
     width: 14vw;
-    font-size: 1.5vw;
-    color: rgb(2,48,67);
+    font-size: 1.5rem;
+    color: rgb(2, 48, 67);
     font-weight: 600;
 `;

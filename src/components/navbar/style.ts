@@ -8,8 +8,6 @@ export const Container = styled.nav`
     padding-left: 4vw;
     padding-right: 4vw;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     top: 0;
     left: 0;
     right: 0;
@@ -28,6 +26,7 @@ export const Logo = styled.a`
     img {
         max-width: 6vw;
         width: 100%;
+        margin-right: 1rem;
     }
 `;
 
@@ -35,13 +34,12 @@ export const NavList = styled.ul`
     display: flex;
     list-style: none;
     padding: 0;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0 auto;
 `;
 
 export const NavItem = styled.li`
     position: relative;
+    margin-right: 1rem;
 `;
 
 export const NavLink = styled.a`
@@ -61,10 +59,8 @@ export const DropdownMenu = styled.ul`
     padding: 0;
     margin: 0;
     position: absolute;
-    bottom: 100%; /* Display above the NavItem */
     left: 0;
     display: none;
-    z-index: 100; /* Ensure it's on top of other elements */
     
 
     ${NavItem}:hover & {

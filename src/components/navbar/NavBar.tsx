@@ -46,11 +46,11 @@ export const NavBar = () => {
 
     return (
         <Container ref={containerRef} className={isNavbarFixed ? 'top-bar' : ''}>
-            <Logo href="#">
-                <img src={logo} alt="logo"/>
-            </Logo>
             <NavList>
-                <NavItem className={isActiveList(['/home', '/asd']) ? 'active' : ''}>
+                <Logo href="#">
+                    <img src={logo} alt="logo"/>
+                </Logo>
+                <NavItem className={isActiveList(['/something', '/asd']) ? 'active' : ''}>
                     <NavLink className="nav-link dropdown-toggle" href="#" role="button">
                         Kim jesteśmy?
                     </NavLink>

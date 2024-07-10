@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.nav`
     bottom: 0;
     width: 100%;
-    background-color: rgba(211, 211, 211, 0.5);
+    background-color: rgba(211, 211, 211, 0.95);
     color: black;
     font-size: 1rem;
     height: 3vw;
@@ -15,6 +15,7 @@ export const Container = styled.nav`
     right: 0;
     z-index: 1000;
     position: sticky;
+    margin-top: -3vw;
 
     .active {
         border-top: 3px solid rgb(255, 153, 51);

@@ -24,7 +24,7 @@ export const Description = styled.div`
     background-color: rgb(0 51 102);
     color: white;
     display: flex;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 
     justify-content: center; /* Center horizontally */
     align-items: center;    /* Center vertically */
@@ -33,8 +33,8 @@ export const Description = styled.div`
 `;
 
 export const Title = styled.p`
-    font-size: 3vw;
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: -1vw;    
+    margin-bottom: -0.5vw;    
     margin-top: 5vw;
 `;

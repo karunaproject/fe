@@ -24,7 +24,7 @@ export const NavBar = () => {
                 <Logo href="#">
                     <img src={logo} alt="logo"/>
                 </Logo>
-                <NavItem className={isActiveList(['/something', '/asd']) ? 'active' : ''}>
+                <NavItem className={isActiveList(['/something', '/asd']) ? 'active' : 'not-active'}>
                     <NavLink className="nav-link dropdown-toggle" href="#" role="button">
                         Kim jesteśmy?
                     </NavLink>
@@ -34,19 +34,19 @@ export const NavBar = () => {
                         <li><a className="dropdown-item" href="#">Something else here</a></li>
                     </DropdownMenu>
                 </NavItem>
-                <NavItem className={isActive('/4') ? 'active' : ''}>
+                <NavItem className={isActive('/4') ? 'active' : 'not-active'}>
                     <NavLink href="/#">Program Kastrujemy Bezdomność</NavLink>
                 </NavItem>
-                <NavItem className={isActive('/3') ? 'active' : ''}>
+                <NavItem className={isActive('/3') ? 'active' : 'not-active'}>
                     <NavLink href="/#">Dołącz i poczuj siłę KOALICJI</NavLink>
                 </NavItem>
-                <NavItem className={isActive('/2') ? 'active' : ''}>
+                <NavItem className={isActive('/2') ? 'active' : 'not-active'}>
                     <NavLink href="/#">Inicjatywy</NavLink>
                 </NavItem>
-                <NavItem className={isActive('/duck') ? 'active' : ''}>
+                <NavItem className={isActive('/duck') ? 'active' : 'not-active'}>
                     <NavLink href="/duck">Mapa Gmin</NavLink>
                 </NavItem>
-                <NavItem className={isActive('/home') ? 'active' : ''}>
+                <NavItem className={isActive('/home') ? 'active' : 'not-active'}>
                     <NavLink href="/home">
                         <FontAwesomeIcon icon={faHouse}/>
                     </NavLink>

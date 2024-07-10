@@ -20,7 +20,26 @@ export const Container = styled.nav`
     .active {
         border-top: 3px solid var(--color-orange-600);
     }
-;
+
+    .not-active {
+        &:hover:after {
+            transform: scaleX(1);
+        }
+
+        &:after {
+            transition: transform 1s ease-out;
+            transform-origin: center;
+            position: absolute;
+            content: '';
+            background-color: black;
+            top: 0;
+            right: 0.07vw;
+            width: 100%;
+            height: 3px;
+            transform: scaleX(0);
+            border-top: 3px solid var(--color-orange-600);
+        }
+    }
 `;
 
 export const Logo = styled.a`

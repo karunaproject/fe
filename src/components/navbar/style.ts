@@ -26,8 +26,11 @@ export const Container = styled.nav`
     }
 
     .not-active {
+        border-top: 3px solid rgb(1,1,1,0);
         &:hover:after {
             transform: scaleX(1);
+            border-top: 3px solid var(--color-orange-600);
+            margin-top: -3px;
         }
 
         &:after {
@@ -42,6 +45,7 @@ export const Container = styled.nav`
             height: 3px;
             transform: scaleX(0);
             border-top: 3px solid var(--color-orange-600);
+            margin-top: -3px;
         }
     }
 `;

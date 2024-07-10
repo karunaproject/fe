@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.nav`
     bottom: 0;
     width: 100%;
-    background-color: rgba(211, 211, 211, 0.5);
+    background-color: rgba(211, 211, 211, 0.95);
     color: black;
     font-size: 1rem;
     height: 3vw;
@@ -15,11 +15,35 @@ export const Container = styled.nav`
     right: 0;
     z-index: 1000;
     position: sticky;
+    margin-top: -3vw;
 
     .active {
-        border-top: 3px solid rgb(255, 153, 51);
+        border-top: 3px solid var(--color-orange-600);
     }
-;
+
+    .active-dropdown-item {
+        border-left: 5px solid var(--color-orange-600);
+    }
+
+    .not-active {
+        &:hover:after {
+            transform: scaleX(1);
+        }
+
+        &:after {
+            transition: transform 1s ease-out;
+            transform-origin: center;
+            position: absolute;
+            content: '';
+            background-color: black;
+            top: 0;
+            right: 0.07vw;
+            width: 100%;
+            height: 3px;
+            transform: scaleX(0);
+            border-top: 3px solid var(--color-orange-600);
+        }
+    }
 `;
 
 export const Logo = styled.a`
@@ -60,11 +84,12 @@ export const DropdownMenu = styled.ul`
     margin: 0;
     position: absolute;
     left: 0;
-    display: none;
-
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
 
     ${NavItem}:hover & {
-        display: block;
+        max-height: 300px;
     }
 
     a {
@@ -74,7 +99,7 @@ export const DropdownMenu = styled.ul`
         border-left: 5px solid transparent;
 
         &:hover {
-            border-left: 5px solid rgb(255, 153, 51);
+            border-left: 5px solid var(--color-orange-600);
         }
     }
 `;

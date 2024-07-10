@@ -24,29 +24,29 @@ export const NavBar = () => {
                 <Logo href="#">
                     <img src={logo} alt="logo"/>
                 </Logo>
-                <NavItem className={isActiveList(['/something', '/asd']) ? 'active' : ''}>
+                <NavItem className={isActiveList(['/action', '/5', '/6']) ? 'active' : 'not-active'}>
                     <NavLink className="nav-link dropdown-toggle" href="#" role="button">
                         Kim jesteśmy?
                     </NavLink>
                     <DropdownMenu>
-                        <li><a className="dropdown-item" href="#">Action</a></li>
-                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                        <li><a className={`dropdown-item ${isActive('/action') ? 'active-dropdown-item' : ''}`} href="/action">Action</a></li>
+                        <li><a className={`dropdown-item ${isActive('/5') ? 'active-dropdown-item' : ''}`} href="#">Another Action</a></li>
+                        <li><a className={`dropdown-item ${isActive('/6') ? 'active-dropdown-item' : ''}`} href="#">Action3</a></li>
                     </DropdownMenu>
                 </NavItem>
-                <NavItem className={isActive('/4') ? 'active' : ''}>
+                <NavItem className={isActive('/4') ? 'active' : 'not-active'}>
                     <NavLink href="/#">Program Kastrujemy Bezdomność</NavLink>
                 </NavItem>
-                <NavItem className={isActive('/3') ? 'active' : ''}>
+                <NavItem className={isActive('/3') ? 'active' : 'not-active'}>
                     <NavLink href="/#">Dołącz i poczuj siłę KOALICJI</NavLink>
                 </NavItem>
-                <NavItem className={isActive('/2') ? 'active' : ''}>
+                <NavItem className={isActive('/2') ? 'active' : 'not-active'}>
                     <NavLink href="/#">Inicjatywy</NavLink>
                 </NavItem>
-                <NavItem className={isActive('/duck') ? 'active' : ''}>
+                <NavItem className={isActive('/duck') ? 'active' : 'not-active'}>
                     <NavLink href="/duck">Mapa Gmin</NavLink>
                 </NavItem>
-                <NavItem className={isActive('/home') ? 'active' : ''}>
+                <NavItem className={isActive('/home') ? 'active' : 'not-active'}>
                     <NavLink href="/home">
                         <FontAwesomeIcon icon={faHouse}/>
                     </NavLink>

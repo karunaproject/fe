@@ -12,6 +12,7 @@ const App = () => {
                 <Route path={"/hello"} element={<Hello/>}/>
                 <Route path={"/duck"} element={<DuckBody/>}/>
                 <Route path={"/home"} element={<HomePage/>}/>
+                <Route path={"/action"} element={<DuckBody/>}/>
             </Routes>
         </div>
     );

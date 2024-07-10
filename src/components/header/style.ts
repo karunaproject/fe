@@ -30,7 +30,7 @@ export const TitleLogoWrapper = styled.div`
 
 export const TitleWrapper = styled.div`
     font-size: 4.1rem;
-    background-color: rgb(253, 188, 102);
+    background-color: var(--color-orange-500);
     color: white;
     padding-left: 3vw;
     padding-right: 3vw;
@@ -52,7 +52,7 @@ export const LogoWrapper = styled.div`
 
 export const StyledButton = styled(Button)`
     margin-top: 5vw;
-    background-color: rgb(253, 188, 102);
+    background-color: var(--color-orange-500);
     width: 14vw;
     font-size: 1.5rem;
     color: rgb(2, 48, 67);

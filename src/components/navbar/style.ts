@@ -6,7 +6,7 @@ export const Container = styled.nav`
     background-color: rgba(211, 211, 211, 0.95);
     color: black;
     font-size: 1rem;
-    height: 3vw;
+    height: 2vw;
     padding-left: 4vw;
     padding-right: 4vw;
     display: flex;
@@ -15,7 +15,7 @@ export const Container = styled.nav`
     right: 0;
     z-index: 1000;
     position: sticky;
-    margin-top: -3vw;
+    margin-top: -2vw;
 
     .active {
         border-top: 3px solid var(--color-orange-600);
@@ -26,8 +26,11 @@ export const Container = styled.nav`
     }
 
     .not-active {
+        border-top: 3px solid rgb(1,1,1,0);
         &:hover:after {
             transform: scaleX(1);
+            border-top: 3px solid var(--color-orange-600);
+            margin-top: -3px;
         }
 
         &:after {
@@ -42,13 +45,15 @@ export const Container = styled.nav`
             height: 3px;
             transform: scaleX(0);
             border-top: 3px solid var(--color-orange-600);
+            margin-top: -3px;
         }
     }
 `;
 
 export const Logo = styled.a`
     img {
-        max-width: 6vw;
+        //max-width: 5vw;
+        height: 100%;
         width: 100%;
         margin-right: 1rem;
     }

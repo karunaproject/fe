@@ -18,7 +18,7 @@ export const Container = styled.nav`
     margin-top: -3vw;
 
     .active {
-        border-top: 3px solid rgb(255, 153, 51);
+        border-top: 3px solid var(--color-orange-600);
     }
 ;
 `;
@@ -75,7 +75,7 @@ export const DropdownMenu = styled.ul`
         border-left: 5px solid transparent;
 
         &:hover {
-            border-left: 5px solid rgb(255, 153, 51);
+            border-left: 5px solid var(--color-orange-600);
         }
     }
 `;

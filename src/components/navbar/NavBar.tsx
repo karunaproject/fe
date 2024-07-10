@@ -24,14 +24,14 @@ export const NavBar = () => {
                 <Logo href="#">
                     <img src={logo} alt="logo"/>
                 </Logo>
-                <NavItem className={isActiveList(['/something', '/asd']) ? 'active' : 'not-active'}>
+                <NavItem className={isActiveList(['/action', '/5', '/6']) ? 'active' : 'not-active'}>
                     <NavLink className="nav-link dropdown-toggle" href="#" role="button">
                         Kim jesteśmy?
                     </NavLink>
                     <DropdownMenu>
-                        <li><a className="dropdown-item" href="#">Action</a></li>
-                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                        <li><a className="dropdown-item" href="#">Something else here</a></li>
+                        <li><a className={`dropdown-item ${isActive('/action') ? 'active-dropdown-item' : ''}`} href="/action">Action</a></li>
+                        <li><a className={`dropdown-item ${isActive('/5') ? 'active-dropdown-item' : ''}`} href="#">Another Action</a></li>
+                        <li><a className={`dropdown-item ${isActive('/6') ? 'active-dropdown-item' : ''}`} href="#">Action3</a></li>
                     </DropdownMenu>
                 </NavItem>
                 <NavItem className={isActive('/4') ? 'active' : 'not-active'}>

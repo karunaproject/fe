@@ -21,6 +21,10 @@ export const Container = styled.nav`
         border-top: 3px solid var(--color-orange-600);
     }
 
+    .active-dropdown-item {
+        border-left: 5px solid var(--color-orange-600);
+    }
+
     .not-active {
         &:hover:after {
             transform: scaleX(1);
@@ -80,11 +84,12 @@ export const DropdownMenu = styled.ul`
     margin: 0;
     position: absolute;
     left: 0;
-    display: none;
-
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
 
     ${NavItem}:hover & {
-        display: block;
+        max-height: 300px;
     }
 
     a {

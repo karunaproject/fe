@@ -6,7 +6,7 @@ export const DuckBody = () => {
         <>
             <Header/>
             <NavBar/>
-            <div style={{height: "1600px"}}>
+            <div style={{height: "1600px", overflow: "hidden"}}>
                 <img src="./duck.0.jpeg"/>
             </div>
         </>

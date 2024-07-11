@@ -46,7 +46,7 @@ export const DescriptionWrapper = styled.div<{ align: string }>`
     
     img {
         position: relative;
-        width: 20.5vw;
+        height: 100%;
         transform: ${(props) => (props.align === 'left' ? 'translateX(-5vw)' : 'translateX(5vw)')};
     }
 `;

@@ -14,17 +14,21 @@ export const Pillars: React.FC<PillarsProps> = ({ title, description, index }) =
     return (
         <Container>
             <Title>{title}</Title>
-            <DescriptionWrapper align={align}>
-                <DescriptionLeft>
-                    {align === 'right' && description}
-                </DescriptionLeft>
-                <img src={dog} alt="dog" />
-                <DescriptionRight>
-                    {align === 'left' && description}
-                </DescriptionRight>
-            </DescriptionWrapper>
-        </Container>
-    );
+            <div className={align === "left" ? "slide-right": "slide-left"}>
+                <DescriptionWrapper align={align}>
+                    <DescriptionLeft>
+                        {align === 'right' && description}
+                    </DescriptionLeft>
+                    <img src={dog} alt="dog"/>
+                    <DescriptionRight>
+                        {align === 'left' && description}
+                    </DescriptionRight>
+
+        </DescriptionWrapper>
+            </div>
+</Container>
+)
+    ;
 };
 
 export default Pillars;

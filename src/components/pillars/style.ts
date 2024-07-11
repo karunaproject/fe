@@ -4,6 +4,31 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+
+    .slide-right {
+        animation: 3s slide-right;
+    }
+    @keyframes slide-right {
+        from {
+            margin-left: -200%;
+        }
+        to {
+            margin-left: 0%;
+        }
+    }
+    
+    .slide-left {
+        animation: 3s slide-left;
+    }
+    @keyframes slide-left {
+        from {
+            margin-left: 200%;
+        }
+        to {
+            margin-left: 0%;
+        }
+    }
 `;
 
 export const DescriptionWrapper = styled.div<{ align: string }>`
@@ -18,9 +43,7 @@ export const DescriptionWrapper = styled.div<{ align: string }>`
     text-align: center;
     flex-direction: row;
     border-radius: ${(props) => (props.align === 'left' ? '0 10px 10px 0' : '10px 0 0 10px')};
-    margin-left: ${(props) => (props.align === 'left' ? '9.3vw' : 'auto')};
-    margin-right: ${(props) => (props.align === 'right' ? '9.3vw' : 'auto')};
-
+    
     img {
         position: relative;
         width: 20.5vw;

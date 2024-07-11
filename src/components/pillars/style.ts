@@ -4,11 +4,11 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
 
     .slide-right {
         animation: 3s slide-right;
     }
+
     @keyframes slide-right {
         from {
             margin-left: -200%;
@@ -17,10 +17,11 @@ export const Container = styled.div`
             margin-left: 0%;
         }
     }
-    
+
     .slide-left {
         animation: 3s slide-left;
     }
+
     @keyframes slide-left {
         from {
             margin-left: 200%;
@@ -43,7 +44,9 @@ export const DescriptionWrapper = styled.div<{ align: string }>`
     text-align: center;
     flex-direction: row;
     border-radius: ${(props) => (props.align === 'left' ? '0 10px 10px 0' : '10px 0 0 10px')};
-    
+    margin-left: ${(props) => (props.align === 'left' ? '-10.5vw' : 'auto')};
+    margin-right: ${(props) => (props.align === 'right' ? '-10.5vw' : 'auto')};
+
     img {
         position: relative;
         height: 100%;

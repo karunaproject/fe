@@ -4,6 +4,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 
     .slide-right {
         animation: 3s slide-right;
